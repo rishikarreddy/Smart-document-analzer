@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Header Styling */
+h1 {
+  color: #4CAF50;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* File Upload Section */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"] {
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  width: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #e8f5e9;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Textarea Styling */
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Summary Section */
+p {
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+  white-space: pre-wrap; /* To preserve text formatting */
+  word-wrap: break-word;
+}
+
+textarea:focus,
+input[type="file"]:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  input[type="file"] {
+    width: 90%;
+  }
+
+  button {
+    width: 90%;
+  }
+}
