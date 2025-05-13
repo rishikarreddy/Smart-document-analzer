@@ -1,0 +1,6 @@
+flask
+pytesseract
+transformers
+torch
+PyMuPDF
+Pillow
